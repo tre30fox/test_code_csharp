@@ -9,6 +9,13 @@ namespace Rotate
 {
     class Rotate
     {
+    	/*
+    	주어진 data 와 rotated 가 circular rotate(순환 회전) 관계인지 여부 반환
+    	즉, 전체 문자열이 좌/우로 이동한 상태, 이동한 문자열이 한쪽 끝에 다다르면 반대편 끝에서 나타남.
+    	ex)
+    	  data == "abc" and rotated == "cab"  => true
+    	  data == "abc" and rotated == "acb"  => false
+    	*/
         static bool rotate(String strSrc, String strRotated)
         {
 
